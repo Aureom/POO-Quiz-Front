@@ -1,0 +1,21 @@
+.question-card {
+    padding: 1.5rem;
+}
+
+.submit-answer {
+    background-color: #00a65a;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.submit-answer:hover {
+    background-color: #008F5a;
+}
+
+.submit-answer:disabled {
+    background-color: #373A40;
+}
+
+.submit-answer:disabled:hover {
+    background-color: #373A40;
+}
