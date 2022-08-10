@@ -1,9 +1,9 @@
-import React, {useEffect} from "react";
+import React from "react";
 import './style/questionStyle.css'
 
 import {Button, Card, Checkbox, Progress, Title} from "@mantine/core";
 import {toast, ToastContainer} from "react-toastify";
-import {answerQuestion, GameStatus} from "../api/API";
+import {answerQuestion} from "../api/API";
 
 type Props = {
     question: string;
