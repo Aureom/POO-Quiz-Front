@@ -5,13 +5,12 @@
 }
 
 html {
-    height: 100%;
+    background-repeat: no-repeat;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
 body {
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
