@@ -58,14 +58,14 @@ export function Game() {
         <>
             <LoadingOverlay visible={gameData === undefined} overlayBlur={2} transitionDuration={500}/>
             <Grid justify="center" className="game-main">
-                <Grid.Col className="users" sm={5} md={4}>
-                    <ScrollArea style={{height: 800}}>
+                <Grid.Col className="users-container" sm={5} md={4}>
+                    <ScrollArea className="users-scroll">
                         {gameData !== undefined && gameData.users.map((user, index) => (
                             <UserCard username={user.username} score={user.score} position={index}/>
                         ))}
                     </ScrollArea>
                 </Grid.Col>
-                <Grid.Col sm={8} md={8}>
+                <Grid.Col className="question-container" sm={8} md={8}>
                     {gameData?.status === GameStatus.FINISHED && (
                         <WinnerCard user={gameData.users[0]}/>
                     )}

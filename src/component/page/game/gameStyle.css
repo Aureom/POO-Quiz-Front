@@ -7,6 +7,25 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.users {
-    transition: all 2.8s ease-in-out;
+.game-main {
+    display: flex;
+    margin: 0 1.5rem;
+}
+
+.users-scroll {
+    height: 85vh;
+}
+
+@media (max-width: 768px) {
+    .users-container {
+        order: 2
+    }
+
+    .users-scroll {
+        height: 37.5vh;
+    }
+
+    .question-container {
+        order: 1
+    }
 }
